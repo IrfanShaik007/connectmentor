@@ -9,6 +9,7 @@ import MenteeDashboard from './pages/MenteeDashboard';
 import ExploreMentors from './pages/ExploreMentors';
 import AIChatbot from './pages/AIChatbot';
 import FlexibleScheduling from './pages/FlexibleScheduling';
+import Roadmap from './pages/Roadmap';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/explore-mentors" element={<ExploreMentors />} />
           <Route path="/ai-chatbot" element={<AIChatbot />} />
           <Route path="/flexible-scheduling" element={<FlexibleScheduling />} />
+          <Route path="/roadmap" element={<Roadmap />} />
         </Routes>
       </main>
     </Router>
