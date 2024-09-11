@@ -1,15 +1,16 @@
-// src/pages/LoginPage.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 function LoginPage() {
-  const [userType, setUserType] = useState('mentee'); // or 'mentor'
+  const [userType, setUserType] = useState('mentee'); // By default mentee
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = (e, type) => {
     e.preventDefault();
+    setUserType(type);  // Set userType dynamically based on form
+
     // Example logic for redirecting
-    if (userType === 'mentee') {
+    if (type === 'mentee') {
       navigate('/mentee-dashboard');
     } else {
       navigate('/mentor-dashboard');
@@ -23,7 +24,7 @@ function LoginPage() {
           {/* Mentee Login */}
           <div className="p-8">
             <h2 className="text-2xl font-bold mb-4">Mentee Login</h2>
-            <form className="space-y-4" onSubmit={handleLogin}>
+            <form className="space-y-4" onSubmit={(e) => handleLogin(e, 'mentee')}>
               <div>
                 <label htmlFor="mentee-email" className="block text-sm font-medium text-gray-700">Email Address</label>
                 <input
@@ -59,7 +60,7 @@ function LoginPage() {
           {/* Mentor Login */}
           <div className="p-8 bg-gray-50">
             <h2 className="text-2xl font-bold mb-4">Mentor Login</h2>
-            <form className="space-y-4" onSubmit={handleLogin}>
+            <form className="space-y-4" onSubmit={(e) => handleLogin(e, 'mentor')}>
               <div>
                 <label htmlFor="mentor-email" className="block text-sm font-medium text-gray-700">Email Address</label>
                 <input

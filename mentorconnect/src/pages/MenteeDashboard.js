@@ -12,7 +12,11 @@ function MenteeDashboard() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Explore Mentors */}
-          <Link to="/explore-mentors" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+          <Link
+            to="/explore-mentors"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            aria-label="Explore Mentors"
+          >
             <div className="text-center">
               <i className="fas fa-user-tie text-blue-500 text-6xl"></i>
               <h2 className="text-xl font-semibold text-gray-800 mt-4">Explore Mentors</h2>
@@ -21,7 +25,11 @@ function MenteeDashboard() {
           </Link>
 
           {/* AI Chatbot */}
-          <Link to="/ai-chatbot" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+          <Link
+            to="/ai-chatbot"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            aria-label="AI Chatbot"
+          >
             <div className="text-center">
               <i className="fas fa-robot text-green-500 text-6xl"></i>
               <h2 className="text-xl font-semibold text-gray-800 mt-4">AI Chatbot</h2>
@@ -30,13 +38,44 @@ function MenteeDashboard() {
           </Link>
 
           {/* Flexible Scheduling */}
-          <Link to="/flexible-scheduling" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform">
+          <Link
+            to="/flexible-scheduling"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            aria-label="Flexible Scheduling"
+          >
             <div className="text-center">
               <i className="fas fa-calendar-alt text-purple-500 text-6xl"></i>
               <h2 className="text-xl font-semibold text-gray-800 mt-4">Flexible Scheduling</h2>
               <p className="text-gray-600 mt-2">Schedule sessions with mentors according to your availability.</p>
             </div>
           </Link>
+
+          {/* Resources and Materials */}
+          <Link
+            to="/resources-materials"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            aria-label="Resources and Materials"
+          >
+            <div className="text-center">
+              <i className="fas fa-book text-orange-500 text-6xl"></i>
+              <h2 className="text-xl font-semibold text-gray-800 mt-4">Resources and Materials</h2>
+              <p className="text-gray-600 mt-2">Access the resources and materials suggested by your mentor.</p>
+            </div>
+          </Link>
+          
+          {/* Video Call */}
+          <Link
+            to="/video-call"
+            className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform"
+            aria-label="Video Call"
+          >
+            <div className="text-center">
+              <i className="fas fa-video text-red-500 text-6xl"></i>
+              <h2 className="text-xl font-semibold text-gray-800 mt-4">Video Call</h2>
+              <p className="text-gray-600 mt-2">Start a video call with your mentor.</p>
+            </div>
+          </Link>
+
         </div>
       </div>
     </div>

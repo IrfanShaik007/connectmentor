@@ -10,9 +10,9 @@ function HeroSection() {
           Empower Your Career with <span className="text-teal-300">Expert Mentorship</span>
         </h1>
         <p className="text-lg md:text-2xl mb-8 text-gray-300">Connect with industry leaders and achieve your career goals with personalized guidance.</p>
-        <Link to="/explore-mentors">
+        <Link to="/login">
           <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
-            Explore Mentors
+            Explore Mentors and Mentees
           </button>
         </Link>
       </div>

@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 function HomePage() {
   return (
-    <div>
+    <div className="min-h-screen bg-gray-100 dark:bg-black">
       <Header />
       <HeroSection />
       <Features />
