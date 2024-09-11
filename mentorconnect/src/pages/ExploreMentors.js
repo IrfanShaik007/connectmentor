@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa'; // Import profile icon from react-icons
 
 const mentors = [
-  { id: 1, name: 'John Doe' },
-  { id: 2, name: 'Jane Smith' },
-  { id: 3, name: 'Emily Johnson' },
+  { id: 1, name: 'mentor1' },
+  { id: 2, name: 'mentor2' },
+  { id: 3, name: 'mentor3' },
 ];
 
 function ExploreMentors() {
