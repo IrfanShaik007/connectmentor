@@ -84,7 +84,7 @@ function LoginPage() {
                 </button>
               </form>
               <div className="text-center mt-4 text-white">
-                Don't have an account?{' '}
+                Don't have an account?.{' '}
                 <Link to="/mentor-signup" className="font-semibold underline">
                   Sign up
                 </Link>
